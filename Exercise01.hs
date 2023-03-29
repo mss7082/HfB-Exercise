@@ -9,6 +9,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+doubleInteger :: Int -> Int
+doubleInteger = (*2)
 
 
 -- Exercise 1.2
@@ -20,6 +22,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+cuboidVolume :: Double -> Double -> Double -> Double
+cuboidVolume l w h = l * w * h
 
 
 -- Exercise 1.3
@@ -30,7 +34,8 @@ module Exercise01 where
 
 
 -- "Coding here"
-
+isEqual :: Int -> Int -> Bool
+isEqual  = (==)
 
 -- Exercise 1.4
 -----------------------------------------------------------------------------------------------------------
@@ -40,6 +45,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+notEqual :: Int -> Int -> Bool
+notEqual = (/=)
 
 
 -- Exercise 1.5
@@ -50,6 +57,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+letsAdd :: Int -> Int -> Int
+letsAdd = (+)
 
 
 -- Exercise 1.6
@@ -60,7 +69,8 @@ module Exercise01 where
 
 
 -- "Coding here"
-
+letsSubstract :: Int -> Int -> Int
+letsSubstract = (-)
 
 -- Exercise 1.7
 -----------------------------------------------------------------------------------------------------------
@@ -69,6 +79,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+letsMultiply :: Int -> Int -> Int
+letsMultiply = (*)
 
 
 -- Exercise 1.8
@@ -78,6 +90,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+letsDivide :: Float -> Float -> Float
+letsDivide = (/)
 
 
 -- Exercise 1.9
@@ -89,6 +103,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+nextNum :: Int -> Int
+nextNum = succ
 
 
 -- Exercise 1.10
@@ -98,6 +114,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+whatsBigger :: Int -> Int -> Int
+whatsBigger = max 
 
 
 -- Exercise 1.11
@@ -107,6 +125,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+whatsSmaller:: Int -> Int -> Int
+whatsSmaller = min
 
 
 -- Exercise 1.12
@@ -119,6 +139,8 @@ module Exercise01 where
 
 -- "Coding here"
 
+letsDiv :: Int -> Int -> Int
+letsDiv = div
 
 -- Exercise 1.13
 -----------------------------------------------------------------------------------------------------------
@@ -129,6 +151,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+myModulo :: Int -> Int -> Int
+myModulo = mod
 
 
 -- Exercise 1.14
@@ -138,6 +162,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+isOdd :: Int -> Bool
+isOdd = odd
 
 
 -- Exercise 1.15
@@ -147,6 +173,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+isEven :: Int -> Bool
+isEven = even
 
 
 -- Exercise 1.16
@@ -157,6 +185,10 @@ module Exercise01 where
 
 
 -- "Coding here"
+evenOrOdd :: Int -> String
+evenOrOdd x
+  | even x = "Even"
+  | otherwise = "Odd"
 
 
 -- Exercise 1.17
@@ -171,7 +203,8 @@ module Exercise01 where
 
 
 -- "Coding here"
-
+loveAlert :: Int -> Int -> Bool
+loveAlert x y = odd $ x + y
 
 -- Exercise 1.18
 -----------------------------------------------------------------------------------------------------------
@@ -183,6 +216,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+swapPolarity :: Int -> Int
+swapPolarity = negate
 
 
 -- Exercise 1.19
@@ -192,6 +227,8 @@ module Exercise01 where
 
 
 -- "Coding here"
+makeAbsolute :: Int -> Int
+makeAbsolute = abs
 
 
 -- Exercise 1.20
@@ -207,4 +244,5 @@ module Exercise01 where
 
 
 -- "Coding here"
-
+makeNegative :: (Num a, Ord a) => a -> a 
+makeNegative = negate . abs
